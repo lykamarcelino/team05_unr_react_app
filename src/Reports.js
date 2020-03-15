@@ -1,4 +1,5 @@
 import React from 'react';
+import "./App.css"
 
 //This file is being used to test being able to connect to a backend and fetching
 //It currently is not functioning
@@ -34,15 +35,15 @@ class Reports extends React.Component{
     render() {
         const { error, isLoaded, items } = this.state;
         if (error) {
-            return <div>Error: {error.message}</div>;
+            return <error>Error: {error.message}</error>;
         } else if (!isLoaded) {
             return <div>Loading...</div>;
         } else {
             return (
                 <ul>
                     {items.map(item => (
-                        <li key={item.name}>
-                           {item.name} {item.price}
+                        <li key={item.SyncToken}>
+                           {item.SyncToken}
                         </li>
                     ))}
                 </ul>

@@ -3,7 +3,7 @@ import {Navbar, Nav} from 'react-bootstrap';
 
 const TopNav = () => {
     return(
-        <Navbar bg="dark" variant="dark">
+        <Navbar className="justify-content-end" bg="dark" variant="dark">
             <Nav className="justify-content-right" activeKey="/home">
                 <Nav.Item>
                     <Nav.Link href="/help">Help</Nav.Link>

@@ -1,0 +1,20 @@
+error{
+    margin-left: 700px;
+}
+
+h3{
+    display: block;
+    min-height: 80px;
+    line-height: 80px;
+    background: white;
+    line-height: 300%;
+    font-size: 1.6rem;
+    color: black;
+    margin-align: center;
+    text-align: center;
+    font-family: "Helvetica Neue",HelveticaNeue,Helvetica,Arial,sans-serif;
+    font-weight:bold;
+}
+
+
+

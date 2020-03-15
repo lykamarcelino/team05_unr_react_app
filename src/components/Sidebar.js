@@ -1,4 +1,4 @@
-//I plan on moving the styled components into a CSS file, I just wanted to see if I would be able to create the sidebar -LM
+//This is a sidebar example, I plan to change the icons to text
 
 import React from 'react';
 import styled from "styled-components";
@@ -9,10 +9,10 @@ const StyledSideNav = styled.div`
   height: 100%;
   width: 75px;     
   z-index: 1;      
-  top: 3.4em;      
+  top: 0px;      
   background-color: #030202; 
   overflow-x: hidden;    
-  padding-top: 10px;
+  padding-top: 51px;
 `;
 
 const NavIcon = styled.div` `;
