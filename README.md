@@ -19,7 +19,8 @@ The project notes will be updated as changes are made to the project.
    **Date:** 3/14/2020
    
    **Note:**
-   - This project includes creating the new React app for the Sales Forecasting project
+   - This Repository includes the new React app for the Sales Forecasting project
+   - GitHub wouldn't allow me to upload the node_modules file because it was too large. The node_modules should be the same as when a new React app is made.
    - It currently is using React Bootstrap for the top navbar and has trial code for the side navbar
    - The login page should be the first page that is displayed, and after clicking the button the user should be prompted to log in: This is not functional!
-   - Upon running, the main page is shown: this is currently not connected to the other main Sales Forecasting application
+   - Upon running, the main page is shown: this is currently not connected to the other main Sales Forecasting application.
