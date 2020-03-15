@@ -1,5 +1,3 @@
-//This is a sidebar example, I plan to change the icons to text
-
 import React from 'react';
 import styled from "styled-components";
 import {Link, withRouter } from "react-router-dom";
@@ -7,24 +5,31 @@ import {Link, withRouter } from "react-router-dom";
 const StyledSideNav = styled.div`
   position: fixed;     
   height: 100%;
-  width: 75px;     
+  width: 200px;     
   z-index: 1;      
   top: 0px;      
-  background-color: #030202; 
+  background-color: #ebeced; 
   overflow-x: hidden;    
   padding-top: 51px;
+  text-color: white;
 `;
 
-const NavIcon = styled.div` `;
+const NavIcon = styled.div` 
+  color: white;
+  margin-right: 60px;
+  text-indent: 1em;
+`;
 
 const StyledNavItem = styled.div`
   height: 70px;
-  width: 75px; 
-  text-align: center; 
+  width: 70px; 
+  text-align: left; 
+  text-color: white;
   margin-bottom: 0;   
+  margin-right: 10px;
   a {
-    font-size: 2.7em;
-    color: ${(props) => props.active ? "white" : "#9FFFCB"};
+    font-size: 1.8em;
+    color: ${(props) => props.active ? "black" : "black"};
     :hover {
       opacity: 0.7;
       text-decoration: none; 
@@ -40,26 +45,32 @@ class SideNav extends React.Component {
             items: [
                 {
                     path: '/',
-                    name: 'Home',
+                    text: 'Home',
                     css: 'fa fa-fw fa-home',
                     key: 1
                 },
                 {
-                    path: '/predictions',
-                    name: 'Predictions',
-                    css: 'fa fa-line-chart',
+                    path: '/reports',
+                    text: 'Reports',
+                    css: 'fa fa-folder-o',
                     key: 2
                 },
                 {
-                    path: '/reports',
-                    name: 'Reports',
-                    css: 'fa fa-folder-o',
+                    path: '/newreport',
+                    text: 'NewReport',
+                    css: 'fa fa-line-chart',
                     key: 3
                 },
                 {
-                    path: '/NoMatch',
-                    name: 'NoMatch',
+                    path: '/qbdata',
+                    text: 'QBData',
+                    css: 'fa fa-file-text',
                     key: 4
+                },
+                {
+                    path: '/nomatch',
+                    text: 'NoMatch',
+                    key: 5
                 },
             ]
         }
@@ -76,7 +87,7 @@ class SideNav extends React.Component {
                 {
                     items.map((item) => {
                         return (
-                            <NavItem path={item.path} name={item.name} css={item.css} onItemClick={this.onItemClick} active={item.path === activePath} key={item.key}/>
+                            <NavItem path={item.path} text={item.text} css={item.css} onItemClick={this.onItemClick} active={item.path === activePath} key={item.key}/>
                         )
                     })
                 }
@@ -97,6 +108,7 @@ class NavItem extends React.Component {
         return(
             <StyledNavItem active={active}>
                 <Link to={this.props.path} className={this.props.css} onClick={this.handleClick}>
+                    {this.props.text}
                     <NavIcon></NavIcon>
                 </Link>
             </StyledNavItem>
