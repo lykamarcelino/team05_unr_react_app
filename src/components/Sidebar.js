@@ -66,12 +66,7 @@ class SideNav extends React.Component {
                     text: 'QBData',
                     css: 'fa fa-file-text',
                     key: 4
-                },
-                {
-                    path: '/nomatch',
-                    text: 'NoMatch',
-                    key: 5
-                },
+                }
             ]
         }
     }
