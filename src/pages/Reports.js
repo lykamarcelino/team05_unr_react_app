@@ -4,12 +4,10 @@ import './styles.css';
 
 export const Reports = (props) => (
     <>
-        <div>
-            <reportheader>View Reports</reportheader>
-        </div>
+        <div style={{marginLeft: '210px',marginTop: '0px',fontSize: '3rem'}}>View Reports</div>
 
         <div style={{ marginTop: '15px', marginLeft: '310px', width: '1100px', height: '400px'}}>
-            <Table striped bordered hover layout>
+            <Table striped bordered hover layout={"true"}>
                 <thead>
                 <tr>
                     <th>Entry #</th>

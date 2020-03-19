@@ -16,8 +16,8 @@ const StyledSideNav = styled.div`
 
 const NavIcon = styled.div` 
   color: white;
-  margin-right: 60px;
-  text-indent: 1em;
+  margin-right: 0px;
+  margin-top: 0px;
 `;
 
 const StyledNavItem = styled.div`
@@ -29,6 +29,7 @@ const StyledNavItem = styled.div`
   margin-right: 10px;
   a {
     font-size: 1.8em;
+    margin-right: 10px;
     color: ${(props) => props.active ? "black" : "black"};
     :hover {
       opacity: 0.7;
@@ -102,10 +103,11 @@ class NavItem extends React.Component {
         const { active } = this.props;
         return(
             <StyledNavItem active={active}>
-                <Link to={this.props.path} className={this.props.css} onClick={this.handleClick}>
-                    {this.props.text}
-                    <NavIcon></NavIcon>
+                <NavIcon>
+                <Link to={this.props.path} className={this.props.css} onClick={this.handleClick}>{this.props.text}
                 </Link>
+                </NavIcon>
+
             </StyledNavItem>
         );
     }

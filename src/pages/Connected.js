@@ -6,7 +6,7 @@ import Sidebar from '../components/Sidebar';
 
 import {Help} from "./Help";
 import {Settings} from "./Settings";
-import {User} from "./User";
+import User from "./User";
 import {Home} from './Home';
 import {Reports} from './Reports';
 import {NewReport} from './NewReport';
