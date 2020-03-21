@@ -1,5 +1,5 @@
 # Team 05 Senior Project README
-This repository contains the new React app 
+This repository contains the new React app
 
 ## Running the Code
 
@@ -15,12 +15,19 @@ This repository contains the new React app
 
 ## Project Notes
 The project notes will be updated as changes are made to the project.   
-   
+
    **Date:** 3/15/2020
-   
+
    **Note:**
    - This Repository includes the new React app for the Sales Forecasting project
    - The connected page is the page that is currently displayed
    - The login page should be the first page that is displayed, and after clicking the button the user should be prompted to log in: This is not functional!
    - Upon running, the main page is shown: this is currently not connected to the other main Sales Forecasting application
    - Cosmetic changes will be made later
+
+   **Date:** 3/21/2020
+
+   **Note:**
+   - The connected page is the page that is currently displayed
+   - Each page has a basic layout for what the page is going to look like
+   - The user tab has the test connection for connecting to the old application
