@@ -5,31 +5,35 @@ import {Link, withRouter } from "react-router-dom";
 const StyledSideNav = styled.div`
   position: fixed;     
   height: 100%;
-  width: 200px;     
+  width: 115px;     
   z-index: 1;      
   top: 0px;      
   background-color: #ebeced; 
   overflow-x: hidden;    
   padding-top: 51px;
   text-color: white;
+  align-content: center;
+  align-text: center;
 `;
 
 const NavIcon = styled.div` 
   color: white;
-  margin-right: 0px;
-  margin-top: 0px;
 `;
 
+
 const StyledNavItem = styled.div`
+  margin-right: 5px;
   height: 70px;
   width: 70px; 
-  text-align: left; 
+  align-content: center;
+  text-align: center; 
   text-color: white;
   margin-bottom: 0;   
-  margin-right: 10px;
+  width: 1.28em;
   a {
-    font-size: 1.8em;
-    margin-right: 10px;
+    font-size: 1.2em;
+    margin-left: 20px;
+    margin-top:20px;
     color: ${(props) => props.active ? "black" : "black"};
     :hover {
       opacity: 0.7;
@@ -47,7 +51,7 @@ class SideNav extends React.Component {
                 {
                     path: '/',
                     text: 'Home',
-                    css: 'fa fa-fw fa-home',
+                    css: 'fa fa-home',
                     key: 1
                 },
                 {
@@ -58,13 +62,13 @@ class SideNav extends React.Component {
                 },
                 {
                     path: '/newreport',
-                    text: 'NewReport',
+                    text: 'Generate',
                     css: 'fa fa-line-chart',
                     key: 3
                 },
                 {
                     path: '/qbdata',
-                    text: 'QBData',
+                    text: 'Account',
                     css: 'fa fa-file-text',
                     key: 4
                 }
@@ -104,7 +108,8 @@ class NavItem extends React.Component {
         return(
             <StyledNavItem active={active}>
                 <NavIcon>
-                <Link to={this.props.path} className={this.props.css} onClick={this.handleClick}>{this.props.text}
+                <Link to={this.props.path} className={this.props.css} onClick={this.handleClick}>
+                    <br></br>{this.props.text}
                 </Link>
                 </NavIcon>
 

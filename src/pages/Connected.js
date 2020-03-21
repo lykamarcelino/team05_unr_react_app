@@ -12,9 +12,9 @@ import {Reports} from './Reports';
 import {NewReport} from './NewReport';
 import {QBData} from './QBData';
 
-
 export const Connected = () => (
     <>
+        <div>
             <Router>
                 <Navbar className="justify-content-end" bg="dark" variant="dark">
                     <Nav className="justify-content-right">
@@ -34,5 +34,6 @@ export const Connected = () => (
                     <Route path="/qbdata" component={QBData} />
                 </Switch>
             </Router>
+        </div>
     </>
 )

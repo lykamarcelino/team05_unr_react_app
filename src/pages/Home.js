@@ -8,7 +8,7 @@ const roundblock = {
     width: "5000px",
     height: "400px",
     textAlign: "center",
-    marginLeft: "190px",
+    marginLeft: "115px",
     marginTop: "24px",
     alignContent: "center"
 }
@@ -20,7 +20,7 @@ const notifications ={
     width: "5010px",
     height: "200px",
     textAlign: "center",
-    marginLeft: "190px",
+    marginLeft: "115px",
     marginTop: "24px",
     alignContent: "center"
 }
