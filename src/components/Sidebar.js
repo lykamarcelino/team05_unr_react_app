@@ -3,14 +3,15 @@ import styled from "styled-components";
 import {Link, withRouter } from "react-router-dom";
 
 const StyledSideNav = styled.div`
-  position: fixed;     
+  position: fixed;   
+  margin-top: 60px;  
   height: 100%;
-  width: 115px;     
+  width: 110px;     
   z-index: 1;      
   top: 0px;      
-  background-color: #ebeced; 
+  background-color: #f2f2f0; 
   overflow-x: hidden;    
-  padding-top: 51px;
+  padding-top: 20px;
   text-color: white;
   align-content: center;
   align-text: center;
@@ -33,7 +34,7 @@ const StyledNavItem = styled.div`
   a {
     font-size: 1.2em;
     margin-left: 20px;
-    margin-top:20px;
+    margin-top: 0px;
     color: ${(props) => props.active ? "black" : "black"};
     :hover {
       opacity: 0.7;

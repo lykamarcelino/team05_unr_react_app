@@ -6,12 +6,17 @@ const newblock = {
     display: "block",
     width: "1200px",
     height: "600px",
-    textAlign: "center",
     marginLeft: "220px",
-    marginTop: "40px",
-    alignContent: "center"
+    marginTop: "40px"
 }
 
 export const Settings = (props) => (
-    <div style={newblock}> Display User Settings </div>
+    <>
+        <div style={newblock}>
+            <div style={{alignContent: 'center', marginLeft: '500px', marginTop: '20px', fontSize:'1.8em', fontWeight:'bold'}}> User Settings</div>
+            <div style={{alignContent: 'left', marginLeft: '35px', marginTop: '20px', fontSize:'1.2em'}}>
+            </div>
+            <div style={{alignContent: 'center', marginLeft: '500px', fontSize:'1.2em', marginTop:'80px'}}></div>
+        </div>
+    </>
 )
