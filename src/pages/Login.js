@@ -2,11 +2,11 @@
 //The "Connect to QuickBooks" button is not linked to anything
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {BrowserRouter as Router, Link, Route, Switch} from "react-router-dom";
 import {Connected} from './Connected';
-import {Button} from "react-bootstrap";
-import Logo from '../src/static/Cloud_Logo.png';
-import Background from './static/Default_Dark.jpg';
-import './App.css';
+import Logo from '../../src/static/Cloud_Logo.png';
+import Background from '../static/Default_Dark.jpg';
+import '../App.css';
 
 const backgroundStyle = {
     backgroundImage: `url(${Background})`,
@@ -37,31 +37,30 @@ export default class Login extends React.Component{
 
     constructor(props){
         super(props);
-        this.state= {
-            showComponent: false
-        };
-        this._onButtonClick = this._onButtonClick.bind(this);
+        this.handleClick = this.handleClick.bind(this);
+        this.state = {isClicked: false};
     }
 
-    _onButtonClick(){
-        this.setState({showComponent: true, });
+    handleClick() {
+        this.setState({isClicked: true});
     }
 
     render() {
+
         return (
+            <Router>
             <div style={backgroundStyle}>
                 <h3>Sales Forecasting
                     <img src={Logo} alt="Main Logo" hspace="20"/>
                 </h3>
                 <div style={roundedblock}>
-                    <Button variant="light" className="justify-content-center" onClick={this._onButtonClick} > Log in to QuickBooks</Button>
-                    {
-                        this.state.showComponent ?
-                            <Connected /> :
-                            null
-                    }
+                    <li><Link to = {'/connected'} className="nav-link">Connected</Link></li>
                 </div>
             </div>
+                <Switch>
+                    <Route path='/connected' component={Connected}/>
+                </Switch>
+            </Router>
         );
     }
 }
