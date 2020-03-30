@@ -17,11 +17,6 @@ const StyledSideNav = styled.div`
   align-text: center;
 `;
 
-const NavIcon = styled.div` 
-  color: white;
-`;
-
-
 const StyledNavItem = styled.div`
   margin-right: 5px;
   height: 70px;
@@ -50,7 +45,7 @@ class SideNav extends React.Component {
             activePath: props.location.pathname,
             items: [
                 {
-                    path: '/',
+                    path: '/home',
                     text: 'Home',
                     css: 'fa fa-home',
                     key: 1
@@ -72,7 +67,13 @@ class SideNav extends React.Component {
                     text: 'Account',
                     css: 'fa fa-file-text',
                     key: 4
-                }
+                },
+                {
+                    path: '/logout',
+                    text: 'Logout',
+                    css: 'fa fa-sign-out',
+                    key: 5
+                },
             ]
         }
     }
@@ -108,12 +109,9 @@ class NavItem extends React.Component {
         const { active } = this.props;
         return(
             <StyledNavItem active={active}>
-                <NavIcon>
                 <Link to={this.props.path} className={this.props.css} onClick={this.handleClick}>
                     <br></br>{this.props.text}
                 </Link>
-                </NavIcon>
-
             </StyledNavItem>
         );
     }

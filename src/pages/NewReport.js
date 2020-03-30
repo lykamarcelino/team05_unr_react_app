@@ -1,5 +1,5 @@
 import React from 'react';
-import {Form, Button, Col} from 'react-bootstrap';
+import {Form, Button} from 'react-bootstrap';
 
 const newblock = {
     backgroundColor: "whitesmoke",
@@ -11,7 +11,6 @@ const newblock = {
     marginLeft: "220px",
     marginTop: "40px",
     alignContent: "center",
-    alignText: "center"
 }
 
 export const NewReport = (props) => (
@@ -21,45 +20,23 @@ export const NewReport = (props) => (
         <br></br>
         <div style={{alignContent: 'center', fontSize:'1em', color:'red'}}> Forms will be changed for generating the reports</div>
         <br></br>
-        <Form>
-            <Form.Group controlId="formFilePath">
-                <Form.Label>File Path</Form.Label>
-                <Form.Control placeholder="Save to Desktop" />
+        <div style={{textAlign: 'left', alignContent:'center'}}>
+        <Form style={{marginLeft: '20px', marginRight: '20px'}}>
+            <Form.Group controlId="formFileName">
+                <Form.Label>File Name</Form.Label>
+                <Form.Control size="sm" placeholder="My New Report" />
             </Form.Group>
 
-            <Form.Group controlId="formGridAddress2">
-                <Form.Label>Address 2</Form.Label>
-                <Form.Control placeholder="Apartment, studio, or floor" />
+            <Form.Group id="formGridCheckbox" style={{textAlign: 'center'}}>
+                <Form.Check type="checkbox" label="Confirm Changes" />
             </Form.Group>
 
-            <Form.Row>
-                <Form.Group as={Col} controlId="formGridCity">
-                    <Form.Label>City</Form.Label>
-                    <Form.Control />
-                </Form.Group>
-
-                <Form.Group as={Col} controlId="formGridState">
-                    <Form.Label>State</Form.Label>
-                    <Form.Control as="select" value="Choose...">
-                        <option>Choose...</option>
-                        <option>...</option>
-                    </Form.Control>
-                </Form.Group>
-
-                <Form.Group as={Col} controlId="formGridZip">
-                    <Form.Label>Zip</Form.Label>
-                    <Form.Control />
-                </Form.Group>
-            </Form.Row>
-
-            <Form.Group id="formGridCheckbox">
-                <Form.Check type="checkbox" label="Check me out" />
-            </Form.Group>
-
-            <Button variant="primary" type="submit">
+            <Button variant="dark" type="submit" style={{textAlign: 'center', marginLeft: '540px', marginTop:'20px'}}>
                 Submit
             </Button>
+
         </Form>
+        </div>
     </div>
     </>
 )

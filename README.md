@@ -17,17 +17,28 @@ This repository contains the new React app
 The project notes will be updated as changes are made to the project.   
 
    **Date:** 3/15/2020
-
-   **Note:**
-   - This Repository includes the new React app for the Sales Forecasting project
-   - The connected page is the page that is currently displayed
-   - The login page should be the first page that is displayed, and after clicking the button the user should be prompted to log in: This is not functional!
-   - Upon running, the main page is shown: this is currently not connected to the other main Sales Forecasting application
-   - Cosmetic changes will be made later
+   
+    Note:
+    - This Repository includes the new React app for the Sales Forecasting project
+    - The connected page is the page that is currently displayed
+    - The login page should be the first page that is displayed, and after clicking the button the user should be prompted to log in: This is not functional!
+    - Upon running, the main page is shown: this is currently not connected to the other main Sales Forecasting application
+    - Cosmetic changes will be made later
 
    **Date:** 3/21/2020
-
-   **Note:**
-   - The connected page is the page that is currently displayed
-   - Each page has a basic layout for what the page is going to look like
-   - The user tab has the test connection for connecting to the old application
+   
+    Note:
+    - The connected page is the page that is currently displayed
+    - Each page has a basic layout for what the page is going to look like
+    - The user tab has the test connection for connecting to the old application
+   
+   **Date:** 3/29/2020
+   
+      Note:
+        - The connected page is the page that is currently displayed
+        - The login page now has the connect to QuickBooks button functioning
+        - The redirect after logging in goes to the Oauth page of the React app, 
+        - This will have to hit the /oauth2redirect endpoint in the old application to set the session realmId, authCode, and tokens
+        - Various cosmetic changes to pages 
+   
+   

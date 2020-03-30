@@ -32,7 +32,7 @@ export const Connected = () => (
                     <Route path='/help' component={Help}/>
                     <Route path='/settings' component={Settings}/>
                     <Route path='/user' component={User}/>
-                    <Route exact path="/" component={Home} />
+                    <Route path="/home" component={Home} />
                     <Route path="/reports" component={Reports} />
                     <Route path="/newreport" component={NewReport}/>
                     <Route path="/qbdata" component={QBData} />
