@@ -5,7 +5,6 @@ import Routes from './Routes';
 import {Connected} from './pages/Connected';
 //import Login from './pages/Login';
 
-
 function App() {
     return(
         <>
