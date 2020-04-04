@@ -2,7 +2,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Logo from '../../src/static/Cloud_Logo.png';
-import Background from '../static/Default_Dark.jpg';
+import Background from '../static/Default_Mint.png';
 import '../App.css';
 const backgroundStyle = {
     backgroundImage: `url(${Background})`,

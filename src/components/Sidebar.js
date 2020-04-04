@@ -45,7 +45,7 @@ class SideNav extends React.Component {
             activePath: props.location.pathname,
             items: [
                 {
-                    path: '/home',
+                    path: '/Home',
                     text: 'Home',
                     css: 'fa fa-home',
                     key: 1

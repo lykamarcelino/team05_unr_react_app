@@ -40,5 +40,19 @@ The project notes will be updated as changes are made to the project.
         - The redirect after logging in goes to the Oauth page of the React app, 
         - This will have to hit the /oauth2redirect endpoint in the old application to set the session realmId, authCode, and tokens
         - Various cosmetic changes to pages 
+        
+   **Date:** 04/03/2020
+      
+         Note:
+           - Functional login and connected page
+           - React app is now connected to QuickBooks API and can call from the old backend
+         Work in Progress: 
+           - Display the home page after connecting, link home to connected 
+           - Format new data that is pulled from the old backend
+           - Logout button
+           - Various cosmetic changes to pages 
+           
+   
+   
    
    
