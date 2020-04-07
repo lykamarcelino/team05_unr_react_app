@@ -1,16 +1,15 @@
 import React from 'react';
 
-/*
 const newblock = {
     backgroundColor: "whitesmoke",
     borderRadius: "50px",
     display: "block",
-    width: "1200px",
-    height: "600px",
-    marginLeft: "220px",
-    marginTop: "40px",
+    width: "700px",
+    height: "500px",
+    marginLeft: "500px",
+    marginTop: "50px",
+    alignContent: "center"
 }
-*/
 
 export default class User extends React.Component {
     constructor(props) {
@@ -30,13 +29,25 @@ export default class User extends React.Component {
     }
     render() {
         const {items} = this.state;
+        let itemArray = new Array(items.length);
+        let i = 0;
+        for(var key in items){
+            itemArray[i] = items[key];
+            i = i + 1;
+        }
+
         return (
         <>
-            <div style={{textAlign: 'center', marginTop: '200px', marginLeft: '50px'}}>
-                This is a message!!
-                {items.response}
+            <div style={newblock}>
+                <div style={{textAlign: 'center', alignContent:'center', paddingTop: '200px'}}>
+                    <i className="fa fa-user-circle-o fa-5x" style={{alignContent:'center', marginTop:'20px', marginBottom: '20px'}}></i>
+                    <br></br>
+                    User: {itemArray[1]} <br></br>
+                    Email: {itemArray[4]} <br></br>
+                    Date Joined: {itemArray[5]}
+                </div>
             </div>
-        </>
+            </>
         );
     }
 }
