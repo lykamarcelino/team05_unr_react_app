@@ -1,3 +1,9 @@
+/*
+    Is used to change the user settings in the application
+    No actual user settings as the reports are not emailed and the report repository does not have any contents
+    @Notes: Lyka Marcelino, 04/09/2020
+ */
+
 import React, {useState, useRef} from 'react';
 import {ToggleButton, ToggleButtonGroup, Button, Overlay, Tooltip} from "react-bootstrap";
 

@@ -1,3 +1,9 @@
+/*
+    Component to retrieve the Sales from the QuickBooks API
+    Prints the most recent 25 sales from the sandbox
+    @Notes: Lyka Marcelino, 04/04/2020
+ */
+
 import React from 'react';
 import {Table} from "react-bootstrap";
 
@@ -75,8 +81,7 @@ export default class Sales extends React.Component {
 
         return (
             <>
-                <div style={{marginLeft: '170px',marginTop: '0px',fontSize: '2rem', fontWeight: 'bold'}}>View your QuickBooks Data</div>
-                <div style={{marginTop: '20px', marginLeft: '265px', width: '1100px', height: '400px'}}>
+                <div style={{marginTop: '20px', marginLeft: '100px', width: '1100px', height: '400px'}}>
                     <Table striped bordered hover variant={true} size="sm">
                         <thead>
                         <tr>
@@ -262,83 +267,6 @@ export default class Sales extends React.Component {
                             <td>{descNames[24]}</td>
                             <td>{price[24]}</td>
                             <td>{quantity[24]}</td>
-                        </tr>
-                        <tr>
-                            <td>{names[25]}</td>
-                            <td>{itemsArray[25]}</td>
-                            <td>{descNames[25]}</td>
-                            <td>{price[25]}</td>
-                            <td>{quantity[25]}</td>
-                        </tr>
-                        <tr>
-                            <td>{names[26]}</td>
-                            <td>{itemsArray[26]}</td>
-                            <td>{descNames[26]}</td>
-                            <td>{price[26]}</td>
-                            <td>{quantity[26]}</td>
-                        </tr>
-                        <tr>
-                            <td>{names[27]}</td>
-                            <td>{itemsArray[27]}</td>
-                            <td>{descNames[27]}</td>
-                            <td>{price[27]}</td>
-                            <td>{quantity[27]}</td>
-                        </tr>
-                        <tr>
-                            <td>{names[28]}</td>
-                            <td>{itemsArray[28]}</td>
-                            <td>{descNames[28]}</td>
-                            <td>{price[28]}</td>
-                            <td>{quantity[28]}</td>
-                        </tr>
-                        <tr>
-                            <td>{names[29]}</td>
-                            <td>{itemsArray[29]}</td>
-                            <td>{descNames[29]}</td>
-                            <td>{price[29]}</td>
-                            <td>{quantity[29]}</td>
-                        </tr>
-                        <tr>
-                            <td>{names[30]}</td>
-                            <td>{itemsArray[30]}</td>
-                            <td>{descNames[30]}</td>
-                            <td>{price[30]}</td>
-                            <td>{quantity[30]}</td>
-                        </tr>
-                        <tr>
-                            <td>{names[31]}</td>
-                            <td>{itemsArray[31]}</td>
-                            <td>{descNames[31]}</td>
-                            <td>{price[31]}</td>
-                            <td>{quantity[31]}</td>
-                        </tr>
-                        <tr>
-                            <td>{names[32]}</td>
-                            <td>{itemsArray[32]}</td>
-                            <td>{descNames[32]}</td>
-                            <td>{price[32]}</td>
-                            <td>{quantity[32]}</td>
-                        </tr>
-                        <tr>
-                            <td>{names[33]}</td>
-                            <td>{itemsArray[33]}</td>
-                            <td>{descNames[33]}</td>
-                            <td>{price[33]}</td>
-                            <td>{quantity[33]}</td>
-                        </tr>
-                        <tr>
-                            <td>{names[34]}</td>
-                            <td>{itemsArray[34]}</td>
-                            <td>{descNames[34]}</td>
-                            <td>{price[34]}</td>
-                            <td>{quantity[34]}</td>
-                        </tr>
-                        <tr>
-                            <td>{names[35]}</td>
-                            <td>{itemsArray[35]}</td>
-                            <td>{descNames[35]}</td>
-                            <td>{price[35]}</td>
-                            <td>{quantity[35]}</td>
                         </tr>
                         </tbody>
                     </Table>

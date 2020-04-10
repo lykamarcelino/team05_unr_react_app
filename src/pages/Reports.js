@@ -1,3 +1,9 @@
+/*
+    The report repository for the web application
+    Elements in table will need to be linked to the reports
+    @Notes: Lyka Marcelino, 04/09/2020
+ */
+
 import React from 'react';
 import {Table} from 'react-bootstrap';
 import './styles.css';

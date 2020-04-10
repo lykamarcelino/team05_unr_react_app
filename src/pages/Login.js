@@ -1,4 +1,9 @@
-//Currently has the connect to QuickBooks button, redirect goes to Oauth page of the React app, need to close the window
+/*
+    Displays the login page for the application
+    Uses the Connect to QuickBooks button for easy connection
+    @Notes: Lyka Marcelino, 04/09/2020
+ */
+
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Logo from '../../src/static/Cloud_Logo.png';

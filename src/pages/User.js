@@ -1,3 +1,8 @@
+/*
+    Is used to display user information from the backend and QuickBooks API
+    @Notes: Lyka Marcelino, 04/09/2020
+ */
+
 import React from 'react';
 
 const newblock = {

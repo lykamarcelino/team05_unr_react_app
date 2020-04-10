@@ -1,4 +1,11 @@
+/*
+    Displays the help page for the application, is called within the topnav in SideBar
+    Instructions for generating a report
+    @Notes: Lyka Marcelino, 04/04/2020
+ */
+
 import React from 'react';
+import Instructions from "../static/Generate_Instructions.png";
 
 const newblock = {
     backgroundColor: "whitesmoke",
@@ -18,8 +25,9 @@ export const Help = () => (
             To generate a new report, click on the Generate tab. <br></br>
             Input your report details into the fields. <br></br>
             Click complete! <br></br>
+
+            <img src={Instructions} alt="Instructions" hspace="20" style={{marginLeft: '300px'}}/>
         </div>
-        <div style={{alignContent: 'center', marginLeft: '500px', fontSize:'1.2em', marginTop:'80px'}}> This will hold an image</div>
     </div>
     </>
 )

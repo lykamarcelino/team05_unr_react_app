@@ -1,3 +1,9 @@
+/*
+    Component to retrieve the Estimates from the QuickBooks API
+    Prints the amount of estimates in my sandbox
+    @Notes: Lyka Marcelino, 04/04/2020
+ */
+
 import React from 'react';
 import {Table} from "react-bootstrap";
 
@@ -84,8 +90,7 @@ export default class Estimates extends React.Component {
 
         return (
             <>
-                <div style={{marginLeft: '170px',marginTop: '0px',fontSize: '2rem', fontWeight: 'bold'}}>View your QuickBooks Data</div>
-                <div style={{marginTop: '20px', marginLeft: '265px', width: '1100px', height: '400px'}}>
+                <div style={{marginTop: '20px', marginLeft: '100px', width: '1100px', height: '400px'}}>
                     <Table striped bordered hover variant={true} size="sm">
                         <thead>
                         <tr>

@@ -1,3 +1,9 @@
+/*
+    Connected Page for the application, will display the Home page upon entering
+    Used to get Query params and authenticate in the backend
+    @Notes: Lyka Marcelino, 04/04/2020
+ */
+
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 

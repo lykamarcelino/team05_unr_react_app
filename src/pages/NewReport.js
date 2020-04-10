@@ -1,5 +1,8 @@
-//We'll have to handle and create states for the choices of the dropdown menu
-//We may have to separate the different drop down menus and create the if statements for the options
+/*
+    Is used to generate a new report for the user
+    Will need to use the input to send to the backend, possibly redirect to another component
+    @Notes: Lyka Marcelino, 04/09/2020
+ */
 
 import React from 'react';
 import {Form, Button, Dropdown} from 'react-bootstrap';

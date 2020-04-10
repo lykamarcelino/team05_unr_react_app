@@ -1,9 +1,10 @@
+/*
+    SideBar component for the application, routes to the different pages
+    @Notes: Lyka Marcelino, 04/04/2020
+ */
+
 import React from 'react'
-import {
-    BrowserRouter as Router,
-    Route,
-    Link, Switch,
-} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom'
 import styled from "styled-components";
 import {Home} from  '../pages/Home'
 import {Nav, Navbar} from "react-bootstrap";
