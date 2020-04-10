@@ -52,7 +52,7 @@ The project notes will be updated as changes are made to the project.
            - Logout button
            - Various cosmetic changes to pages 
            
-   **Date:** 04/03/2020
+   **Date:** 04/09/2020
                  
         Note:
           - All pages are functional and have content
