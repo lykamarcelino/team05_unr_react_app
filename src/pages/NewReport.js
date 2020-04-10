@@ -1,5 +1,11 @@
+/*
+    Is used to generate a new report for the user
+    Will need to use the input to send to the backend, possibly redirect to another component
+    @Notes: Lyka Marcelino, 04/09/2020
+ */
+
 import React from 'react';
-import {Form, Button, Col} from 'react-bootstrap';
+import {Form, Button, Dropdown} from 'react-bootstrap';
 
 const newblock = {
     backgroundColor: "whitesmoke",
@@ -11,7 +17,6 @@ const newblock = {
     marginLeft: "220px",
     marginTop: "40px",
     alignContent: "center",
-    alignText: "center"
 }
 
 export const NewReport = (props) => (
@@ -19,47 +24,47 @@ export const NewReport = (props) => (
     <div style={newblock}>
         <div style={{alignContent: 'center', fontSize:'1.8em', fontWeight:'bold'}}> Generate a New Report</div>
         <br></br>
-        <div style={{alignContent: 'center', fontSize:'1em', color:'red'}}> Forms will be changed for generating the reports</div>
-        <br></br>
-        <Form>
-            <Form.Group controlId="formFilePath">
-                <Form.Label>File Path</Form.Label>
-                <Form.Control placeholder="Save to Desktop" />
+        <div style={{textAlign: 'left', alignContent:'center'}}>
+        <Form style={{marginLeft: '20px', marginRight: '20px'}}>
+            <Form.Group controlId="formFileName">
+                <Form.Label>File Name</Form.Label>
+                <Form.Control size="sm" placeholder="My New Report" />
+            </Form.Group>
+            <Dropdown style={{marginTop: '10px'}}>
+                <Dropdown.Toggle variant="dark" id="dropdown-basic">Type of Prediction</Dropdown.Toggle>
+                <Dropdown.Menu>
+                    <Dropdown.Item href="#/action-1">Sales</Dropdown.Item>
+                    <Dropdown.Item href="#/action-2">Items</Dropdown.Item>
+                    <Dropdown.Item href="#/action-3">Customer</Dropdown.Item>
+                </Dropdown.Menu>
+            </Dropdown>
+            <Dropdown style={{marginTop: '10px'}}>
+                <Dropdown.Toggle variant="dark" id="dropdown-basic">Type of Graph</Dropdown.Toggle>
+                <Dropdown.Menu>
+                    <Dropdown.Item href="#/action-1">Bar</Dropdown.Item>
+                    <Dropdown.Item href="#/action-2">Line</Dropdown.Item>
+                    <Dropdown.Item href="#/action-3">Pie</Dropdown.Item>
+                    <Dropdown.Item href="#/action-3">Scatterplot</Dropdown.Item>
+                </Dropdown.Menu>
+            </Dropdown>
+            <Dropdown style={{marginTop: '10px'}}>
+                <Dropdown.Toggle variant="dark" id="dropdown-basic">Time Period</Dropdown.Toggle>
+                <Dropdown.Menu>
+                    <Dropdown.Item href="#/action-1">Daily</Dropdown.Item>
+                    <Dropdown.Item href="#/action-2">Weekly</Dropdown.Item>
+                    <Dropdown.Item href="#/action-3">Monthly</Dropdown.Item>
+                </Dropdown.Menu>
+            </Dropdown>
+            <Form.Group id="formGridCheckbox" style={{textAlign: 'center'}}>
+                <Form.Check type="checkbox" label="Confirm Selection" />
             </Form.Group>
 
-            <Form.Group controlId="formGridAddress2">
-                <Form.Label>Address 2</Form.Label>
-                <Form.Control placeholder="Apartment, studio, or floor" />
-            </Form.Group>
-
-            <Form.Row>
-                <Form.Group as={Col} controlId="formGridCity">
-                    <Form.Label>City</Form.Label>
-                    <Form.Control />
-                </Form.Group>
-
-                <Form.Group as={Col} controlId="formGridState">
-                    <Form.Label>State</Form.Label>
-                    <Form.Control as="select" value="Choose...">
-                        <option>Choose...</option>
-                        <option>...</option>
-                    </Form.Control>
-                </Form.Group>
-
-                <Form.Group as={Col} controlId="formGridZip">
-                    <Form.Label>Zip</Form.Label>
-                    <Form.Control />
-                </Form.Group>
-            </Form.Row>
-
-            <Form.Group id="formGridCheckbox">
-                <Form.Check type="checkbox" label="Check me out" />
-            </Form.Group>
-
-            <Button variant="primary" type="submit">
+            <Button variant="dark" type="submit" style={{textAlign: 'center', marginLeft: '540px'}}>
                 Submit
             </Button>
+
         </Form>
+        </div>
     </div>
     </>
 )

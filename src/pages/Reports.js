@@ -1,10 +1,16 @@
+/*
+    The report repository for the web application
+    Elements in table will need to be linked to the reports
+    @Notes: Lyka Marcelino, 04/09/2020
+ */
+
 import React from 'react';
 import {Table} from 'react-bootstrap';
 import './styles.css';
 
 export const Reports = (props) => (
     <>
-        <div style={{marginLeft: '140px',marginTop: '0px',fontSize: '2.5rem'}}>View Reports</div>
+        <div style={{marginLeft: '170px',marginTop: '0px',fontSize: '2rem', fontWeight: 'bold'}}>View Reports</div>
 
         <div style={{marginTop: '20px', marginLeft: '265px', width: '1100px', height: '400px'}}>
             <Table striped bordered hover variant={"dark"} layout={"true"}>
