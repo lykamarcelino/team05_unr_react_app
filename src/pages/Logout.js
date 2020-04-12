@@ -30,8 +30,10 @@ export default class Logout extends React.Component {
             }
         }
 
+        logout();
+
         return (
-            logout()
+            null
         );
     }
 }
