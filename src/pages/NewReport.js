@@ -1,70 +1,50 @@
-/*
-    Is used to generate a new report for the user
-    Will need to use the input to send to the backend, possibly redirect to another component
-    @Notes: Lyka Marcelino, 04/09/2020
- */
-
 import React from 'react';
-import {Form, Button, Dropdown} from 'react-bootstrap';
+import {Button} from 'react-bootstrap';
+import GeneralForm from "../components/graphForms/GeneralForm";
+import ItemFetchForm from "../components/graphForms/ItemFetchForm";
+import {BrowserRouter as Router, Link, Route} from "react-router-dom";
+import CustomerFetchForm from "../components/graphForms/CustomerFetchForm";
 
-const newblock = {
-    backgroundColor: "whitesmoke",
-    borderRadius: "50px",
-    display: "block",
-    width: "1200px",
-    height: "600px",
-    textAlign: "center",
-    marginLeft: "220px",
-    marginTop: "40px",
-    alignContent: "center",
-}
+const dataRoute = [
+    { path: '/graphForm',
+        main: () =>  <GeneralForm/>
+    },
+    { path: '/itemForm',
+        main: () => <ItemFetchForm/>
+    },
+    {
+        path: '/customerForm',
+        main: () => <CustomerFetchForm/>
+    }
+]
 
 export const NewReport = (props) => (
     <>
-    <div style={newblock}>
-        <div style={{alignContent: 'center', fontSize:'1.8em', fontWeight:'bold'}}> Generate a New Report</div>
-        <br></br>
-        <div style={{textAlign: 'left', alignContent:'center'}}>
-        <Form style={{marginLeft: '20px', marginRight: '20px'}}>
-            <Form.Group controlId="formFileName">
-                <Form.Label>File Name</Form.Label>
-                <Form.Control size="sm" placeholder="My New Report" />
-            </Form.Group>
-            <Dropdown style={{marginTop: '10px'}}>
-                <Dropdown.Toggle variant="dark" id="dropdown-basic">Type of Prediction</Dropdown.Toggle>
-                <Dropdown.Menu>
-                    <Dropdown.Item href="#/action-1">Sales</Dropdown.Item>
-                    <Dropdown.Item href="#/action-2">Items</Dropdown.Item>
-                    <Dropdown.Item href="#/action-3">Customer</Dropdown.Item>
-                </Dropdown.Menu>
-            </Dropdown>
-            <Dropdown style={{marginTop: '10px'}}>
-                <Dropdown.Toggle variant="dark" id="dropdown-basic">Type of Graph</Dropdown.Toggle>
-                <Dropdown.Menu>
-                    <Dropdown.Item href="#/action-1">Bar</Dropdown.Item>
-                    <Dropdown.Item href="#/action-2">Line</Dropdown.Item>
-                    <Dropdown.Item href="#/action-3">Pie</Dropdown.Item>
-                    <Dropdown.Item href="#/action-3">Scatterplot</Dropdown.Item>
-                </Dropdown.Menu>
-            </Dropdown>
-            <Dropdown style={{marginTop: '10px'}}>
-                <Dropdown.Toggle variant="dark" id="dropdown-basic">Time Period</Dropdown.Toggle>
-                <Dropdown.Menu>
-                    <Dropdown.Item href="#/action-1">Daily</Dropdown.Item>
-                    <Dropdown.Item href="#/action-2">Weekly</Dropdown.Item>
-                    <Dropdown.Item href="#/action-3">Monthly</Dropdown.Item>
-                </Dropdown.Menu>
-            </Dropdown>
-            <Form.Group id="formGridCheckbox" style={{textAlign: 'center'}}>
-                <Form.Check type="checkbox" label="Confirm Selection" />
-            </Form.Group>
-
-            <Button variant="dark" type="submit" style={{textAlign: 'center', marginLeft: '540px'}}>
-                Submit
-            </Button>
-
-        </Form>
-        </div>
-    </div>
+        <div style={{marginLeft: '210px',marginTop: '0px',fontSize: '2rem', fontWeight: 'bold'}}>Generate</div>
+        <Router>
+            <div style={{marginLeft: '170px', marginTop:'10px'}}>
+                <ul style={{listStyleType: 'none', display:'inline'}}>
+                    <Link to="/graphForm" style={{marginRight: '10px'}}>
+                        <Button variant="outline-secondary">General Sales</Button>{' '}
+                    </Link>
+                    <Link to="/itemForm" style={{marginRight: '10px'}}>
+                        <Button variant="outline-secondary">Item Quantity Sales</Button>{' '}
+                    </Link>
+                    <Link to="/customerForm">
+                        <Button variant="outline-secondary">Customer Purchases</Button>{' '}
+                    </Link>
+                </ul>
+                <div>
+                    {dataRoute.map((route) => (
+                        <Route
+                            key={route.path}
+                            path={route.path}
+                            exact={route.exact}
+                            component={route.main}
+                        />
+                    ))}
+                </div>
+            </div>
+        </Router>
     </>
 )
