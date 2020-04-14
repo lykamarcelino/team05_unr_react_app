@@ -1,6 +1,6 @@
 import React from "react";
 import LineGraph from "../graphComponents/LineGraph";
-import PieGraph from "../graphComponents/PieGraph";
+//import PieGraph from "../graphComponents/PieGraph";
 
 const newblock = {
     backgroundColor: "whitesmoke",
@@ -9,7 +9,7 @@ const newblock = {
     width: "600px",
     height: "350px",
     marginLeft: "650px",
-    marginTop: "-365px",
+    marginTop: "-349px",
     alignContent: "center"
 }
 

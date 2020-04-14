@@ -10,7 +10,7 @@ const newblock = {
     borderRadius: "50px",
     display: "block",
     width: "700px",
-    height: "500px",
+    height: "570px",
     marginLeft: "500px",
     marginTop: "50px",
     alignContent: "center"

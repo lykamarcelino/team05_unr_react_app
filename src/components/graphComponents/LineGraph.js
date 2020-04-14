@@ -12,7 +12,7 @@ export default class LineGraph extends Component{
     static defaultProps = {
         displayTitle: true,
         displayLegend: true,
-        legendPosition:'right',
+        legendPosition:'bottom',
         title: "Title"
     }
 
