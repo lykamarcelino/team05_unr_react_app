@@ -1,23 +1,25 @@
 import React, {Component} from 'react';
 import {Line} from 'react-chartjs-2';
+import {Button} from "react-bootstrap";
 
 export default class ScatterplotGraph extends Component{
     constructor(props){
         super(props);
         this.state = {
-            chartData:props.chartData
+            chartData:props.chartData,
         }
     }
 
     static defaultProps = {
         displayTitle:true,
         displayLegend: true,
-        legendPosition:'right',
+        legendPosition:'bottom',
         graphTitle: "Graph Title"
     }
 
     render(){
         return (
+            <>
             <div className="scatterplotGraph">
                 <Line
                     data={this.state.chartData}
@@ -49,8 +51,8 @@ export default class ScatterplotGraph extends Component{
                         }
                     }}
                 />
-
             </div>
+           </>
         )
     }
 }

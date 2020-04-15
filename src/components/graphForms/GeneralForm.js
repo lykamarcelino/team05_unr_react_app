@@ -6,19 +6,31 @@ const newblock = {
     backgroundColor: "whitesmoke",
     borderRadius: "50px",
     display: "block",
-    width: "600px",
+    width: "650px",
     height: "600px",
     marginLeft: "25px",
     marginTop: "15px",
     alignContent: "center"
 }
+
+const checkboxBlock = {
+    backgroundColor: "whitesmoke",
+    borderRadius: "50px",
+    display: "block",
+    width: "230px",
+    height: "300px",
+    marginLeft: "210px",
+    marginTop: "-300px",
+    alignContent: "center",
+}
+
 const newblock2 = {
     backgroundColor: "whitesmoke",
     borderRadius: "50px",
     display: "block",
-    width: "800px",
+    width: "850px",
     height: "600px",
-    marginLeft: "550px",
+    marginLeft: "570px",
     marginTop: "-600px",
     alignContent: "center"
 }
@@ -33,7 +45,12 @@ export default class GeneralForm extends React.Component {
             predFrequency: "",
             numPred: 0,
             showTable: false,
-            notEmpty: false
+            notEmpty: false,
+            transactionData: false,
+            customerInfo: false,
+            inventoryInfo: false,
+            graph: false,
+            gridlines: false,
         }
         this.handleChange = this.handleChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
@@ -41,16 +58,23 @@ export default class GeneralForm extends React.Component {
 
 
     handleChange(event) {
-        this.setState({ [event.target.name]: event.target.value})
+        this.setState({ [event.target.name]: event.target.value,
+                              notEmpty:false})
     }
 
     handleSubmit(event) {
-        this.setState({notEmpty: true})
         event.preventDefault()
+        this.setState({notEmpty: true})
     }
 
+    handleCheck(event){
+        this.setState({[event.target.name]: event.target.checked,
+                             notEmpty:false})
+        console.log(this.state)
+    }
 
     render() {
+
         return(<>
         <div style={newblock}>
             <br/>
@@ -58,12 +82,12 @@ export default class GeneralForm extends React.Component {
             <br></br>
             <div style={{textAlign: 'left', alignContent:'center'}}>
                 <Form style={{marginLeft: '20px', marginRight: '20px'}}>
-                    <label> Report Name: </label>
+                    <label> Graph Title: </label>
                     <br/>
                     <input
                         style={{width: "400px", height: "35px"}}
                         name="fileName"
-                        placeholder="My New Report"
+                        placeholder="My Graph"
                         value = {this.state.fileName}
                         onChange = {e => this.handleChange(e)}
                     />
@@ -110,11 +134,70 @@ export default class GeneralForm extends React.Component {
                         onChange = {e => this.handleChange(e)}
                     />
 
+                    <div style = {checkboxBlock}>
+                        <label style = {{marginTop: "55px"}}>Report Options: </label>
+                        <div style = {{marginTop: "5px"}}>
+                        <label>
+                            <input
+                                type='checkbox'
+                                name = "transactionData"
+                                checked = {this.state.transactionData}
+                                onChange =  {e => this.handleCheck(e)}
+                            />
+                            <span style ={{marginLeft: "10px"}}>Transaction Data</span>
+                        </label>
+                        </div>
+                        <div style = {{marginTop: "10px"}}>
+                            <label>
+                                <input
+                                    type='checkbox'
+                                    name = "customerInfo"
+                                    checked = {this.state.customerInfo}
+                                    onChange =  {e => this.handleCheck(e)}
+                                />
+                                <span style ={{marginLeft: "10px"}}>Customer Information</span>
+                            </label>
+                        </div>
+                        <div style = {{marginTop: "10px"}}>
+                            <label>
+                                <input
+                                    type='checkbox'
+                                    name = "inventoryInfo"
+                                    checked = {this.state.inventoryInfo}
+                                    onChange =  {e => this.handleCheck(e)}
+                                />
+                                <span style ={{marginLeft: "10px"}}>Inventory Information</span>
+                            </label>
+                        </div>
+                        <div style = {{marginTop: "10px"}}>
+                            <label>
+                                <input
+                                    type='checkbox'
+                                    name = "graph"
+                                    checked = {this.state.graph}
+                                    onChange =  {e => this.handleCheck(e)}
+                                />
+                                <span style ={{marginLeft: "10px"}}>Graph</span>
+                            </label>
+                        </div>
+                        <div style = {{marginTop: "10px"}}>
+                            <label>
+                                <input
+                                    type='checkbox'
+                                    name = "gridlines"
+                                    checked = {this.state.gridlines}
+                                    onChange =  {e => this.handleCheck(e)}
+                                />
+                                <span style ={{marginLeft: "10px"}}>Gridlines</span>
+                            </label>
+                        </div>
+                    </div>
+
                     <br/><br/>
                     <Button
                         variant="outline-dark"
                         type="submit"
-                        style={{textAlign: 'center', marginLeft: '250px', marginTop: "30px", width: "150px", height: "40px"}}
+                        style={{textAlign: 'center', marginLeft: '250px', marginTop: "0px", width: "150px", height: "40px"}}
                         onClick = {(e) => this.handleSubmit(e)}
                     >
                         Submit
@@ -132,7 +215,15 @@ export default class GeneralForm extends React.Component {
                     showTable = {this.state.showTable}
                     from = "General_Sales"
                     id = "none"
+                    showButton = {true}
+
+                    transactioData = {this.state.transactionData}
+                    customerInfo = {this.state.customerInfo}
+                    inventoryInfo = {this.state.inventoryInfo}
+                    graph = {this.state.graph}
+                    gridlines = {this.state.gridlines}
                 />}
+
 
 
                 <br/>

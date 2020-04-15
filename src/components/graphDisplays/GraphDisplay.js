@@ -3,6 +3,7 @@ import BarGraph from "../graphComponents/BarGraph";
 import LineGraph from "../graphComponents/LineGraph";
 import ScatterplotGraph from "../graphComponents/ScatterplotGraph";
 import PieGraph from "../graphComponents/PieGraph";
+import CreateReport from "../reportComponents/CreateReport";
 
 export default class GraphDisplay extends React.Component {
     constructor(props) {
@@ -15,6 +16,13 @@ export default class GraphDisplay extends React.Component {
             showTable: this.props.showTable,
             id: this.props.id,
             from: this.props.from,
+
+            transactionData: this.props.transactioData,
+            customerInfo: this.props.customerInfo,
+            inventoryInfo: this.props.inventoryInfo,
+            graph: this.props.graph,
+            gridlines: this.props.gridlines,
+
             labels: null,
             dataLabel: null,
             data: null,
@@ -26,6 +34,8 @@ export default class GraphDisplay extends React.Component {
             showLegend: null,
             dataFetched: false,
             varSet: false,
+
+
         }
     }
 
@@ -111,7 +121,7 @@ export default class GraphDisplay extends React.Component {
     }
 
     return(
-        <div style={{textAlign: 'center', alignContent:'center', paddingTop: '50px'}}>
+        <div style={{textAlign: 'center', alignContent:'center', paddingTop: '30px', marginRight: "10px"}}>
             {this.state.varSet && this.state.graphType === "Bar" &&
                 <BarGraph
                     chartData = {chartData}
@@ -119,6 +129,7 @@ export default class GraphDisplay extends React.Component {
                     xAxisLabel = {this.state.xAxisLabel}
                     yAxisLabel = {this.state.yAxisLabel}
                     showLegend = {false}
+                    showButton = {true}
                 />
             }
             {this.state.varSet && this.state.graphType === "Line" &&
@@ -128,6 +139,7 @@ export default class GraphDisplay extends React.Component {
                 xAxisLabel = {this.state.xAxisLabel}
                 yAxisLabel = {this.state.yAxisLabel}
                 showLegend = {this.state.showLegend}
+                showButton = {true}
             />
             }
             {this.state.varSet && this.state.graphType === "Scatter" &&
@@ -137,6 +149,7 @@ export default class GraphDisplay extends React.Component {
                 xAxisLabel = {this.state.xAxisLabel}
                 yAxisLabel = {this.state.yAxisLabel}
                 showLegend = {false}
+                showButton = {true}
             />
             }
             {this.state.varSet && this.state.graphType === "Pie" &&
@@ -144,9 +157,29 @@ export default class GraphDisplay extends React.Component {
                 chartData = {chartData}
                 title = {this.state.title}
                 showLegend = {this.state.showLegend}
+                showButton = {true}
             />
             }
+            {this.state.varSet && <CreateReport
+                graphName = {this.state.graphName}
+                graphType = {this.state.graphType}
+                predictionType = {this.state.from}
+                id = {this.state.id}
+                dates = {this.state.labels}
+                dataLabel = {this.state.dataLabel}
+                data = {this.state.data}
+                colors = {this.state.colors}
+                xAxisLabel = {this.state.xAxisLabel}
+                yAxisLabel = {this.state.yAxisLabel}
+
+                transactionData = {this.state.transactionData}
+                customerInfo = {this.state.customerInfo}
+                inventoryInfo = {this.state.inventoryInfo}
+                graph = {this.state.graph}
+                gridlines = {this.state.gridlines}
+            />}
             {!this.state.varSet && <div style = {{marginTop: "200px"}}> loading... </div>}
+
         </div>
     )}
 }

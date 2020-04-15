@@ -12,13 +12,14 @@ export default class BarGraph extends Component{
     static defaultProps = {
         displayTitle: true,
         displayLegend: true,
-        legendPosition:'right',
+        legendPosition:'bottom',
         title: "Title"
     }
 
     render(){
         console.log(this.state.colors)
         return (
+            <>
             <div className="barGraph">
                 <Bar
                     data={this.state.chartData}
@@ -50,8 +51,8 @@ export default class BarGraph extends Component{
                         }
                     }}
                 />
-
             </div>
+            </>
         )
     }
 }
