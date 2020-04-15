@@ -121,7 +121,7 @@ export default class GraphDisplay extends React.Component {
     }
 
     return(
-        <div style={{textAlign: 'center', alignContent:'center', paddingTop: '30px', marginRight: "10px"}}>
+        <div style={{textAlign: 'center', alignContent:'center', paddingTop: '30px', marginRight: "20px", marginTop: "10px"}}>
             {this.state.varSet && this.state.graphType === "Bar" &&
                 <BarGraph
                     chartData = {chartData}

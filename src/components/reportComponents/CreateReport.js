@@ -40,7 +40,7 @@ export default class CreateReport extends React.Component{
                 <Button
                     variant="outline-dark"
                     type="submit"
-                    style={{textAlign: 'center', marginLeft: '250px', marginTop: "0px", width: "150px", height: "40px"}}
+                    style={{textAlign: 'center', marginLeft: '600px', marginTop: "15px", width: "150px", height: "40px"}}
                     onClick = {(e) => this.handleSubmit(e)}
                 >
                     Create Report

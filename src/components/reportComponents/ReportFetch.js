@@ -27,7 +27,7 @@ export default class ReportFetch extends React.Component {
                 this.setState({
                     reports:jsonresponse,
                 })
-                console.log("fetch was done")
+                console.log("Report fetch was done")
                 console.log(this.state)
                 this.setState({fetchdata: true})
             })
@@ -38,9 +38,13 @@ export default class ReportFetch extends React.Component {
     }
     render(){
         console.log(this.state)
-        return(<div style={newblock}>{this.state.fetchdata &&
-        <ReportDisplay
-            reportList= {this.state.reports}
-        />}</div>)
+        return(
+                <>
+                    <div style={{marginLeft: '170px',marginTop: '0px',fontSize: '2rem', fontWeight: 'bold'}}>View your Reports</div>
+                        <div style={{marginTop: '20px', marginLeft: '100px', width: '1100px', height: '400px'}}>
+                            {this.state.fetchdata && <ReportDisplay reportList= {this.state.reports}/>}
+                        </div>
+                </>
+        )
     }
 }
