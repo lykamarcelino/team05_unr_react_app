@@ -62,7 +62,27 @@ The project notes will be updated as changes are made to the project.
           - Generate reports tab
           - Various cosmetic changes to pages 
            
-   
+
+   **Date:** 04/12/2020
+                
+           Note:
+             - All pages are functional and have content
+             - Change favicon 
+           Work in Progress: 
+             - Display the graphs from the backend 
+             - Report repository
+             - Generate reports tab
+             - Various cosmetic changes to pages 
+             
+   **Date:** 04/13/2020
+                    
+               Note:
+                 - Changes to user dashboard, format graphs
+               Work in Progress: 
+                - Report repository
+                 - Generate reports tab
+                 - Various cosmetic changes to pages 
+
    
    
    

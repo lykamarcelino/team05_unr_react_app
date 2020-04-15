@@ -163,7 +163,7 @@ export default class StaticGraph extends React.Component {
                     xAxisLabel = {this.state.xAxisLabel}
                     yAxisLabel = {this.state.yAxisLabel}
                     showLegend = {false}
-                    />
+                />
             </div>)
     }
 }
