@@ -225,7 +225,7 @@ export default class CustomerForm extends React.Component {
                 </div>
                 <div style={newblock2}>
                     <div style = {{}}></div>
-                    <br/>
+                    <br/><br/><br/><br/><br/>
                     {this.state.notEmpty && <GraphDisplay
                         graphName = {this.state.fileName}
                         numPred = {this.state.numPred}

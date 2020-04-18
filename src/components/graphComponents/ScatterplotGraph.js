@@ -14,7 +14,7 @@ export default class ScatterplotGraph extends Component{
         displayTitle:true,
         displayLegend: true,
         legendPosition:'bottom',
-        graphTitle: "Graph Title"
+        title: "Graph Title"
     }
 
     render(){
@@ -26,7 +26,7 @@ export default class ScatterplotGraph extends Component{
                     options={{
                         title:{
                             display:this.props.displayTitle,
-                            text:this.props.graphTitle,
+                            text:this.props.title,
                             fontSize:25
                         },
                         legend:{

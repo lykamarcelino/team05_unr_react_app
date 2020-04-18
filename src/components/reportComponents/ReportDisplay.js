@@ -58,7 +58,7 @@ export default class ReportDisplay extends React.Component {
                                 style={{textAlign: 'center', width: "150px", height: "35px"}}
                                 onClick = {(e) => this.handleSubmit(e, report.name)}
                             >
-                                Download PDF
+                                Open Report
                             </Button>
                         </td>
                     </tr>
