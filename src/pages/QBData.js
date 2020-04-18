@@ -30,10 +30,10 @@ export const QBData = (props) => (
             <Router>
             <div style={{marginLeft: '170px', marginTop:'10px'}}>
                     <ul style={{listStyleType: 'none', display:'inline'}}>
-                        <Link to="/sales" style={{marginRight: '10px'}}>
+                        <Link to="/sales" style={{paddingRight: '10px'}}>
                             <Button variant="outline-secondary">Sales</Button>{' '}
                         </Link>
-                        <Link to="/invoices" style={{marginRight: '10px'}}>
+                        <Link to="/invoices" style={{paddingRight: '10px'}}>
                             <Button variant="outline-secondary">Invoices</Button>{' '}
                         </Link>
                         <Link to="/estimates">

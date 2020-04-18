@@ -73,6 +73,23 @@ The project notes will be updated as changes are made to the project.
              - Report repository
              - Generate reports tab
              - Various cosmetic changes to pages 
+             
+   **Date:** 04/13/2020
+                    
+               Note:
+                 - Changes to user dashboard, format graphs
+               Work in Progress: 
+                - Report repository
+                 - Generate reports tab
+                 - Various cosmetic changes to pages 
+                 
+   **Date:** 04/18/2020
+                    
+               Note:
+                 - Changes to reports, generate, and help tabs
+               Work in Progress: 
+                  - Various cosmetic changes to pages 
+
 
    
    

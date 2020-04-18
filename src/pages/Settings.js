@@ -51,8 +51,8 @@ function PopUp() {
 export const Settings = (props) => (
     <>
         <div style={newblock}>
-            <div style={{alignContent: 'center', marginLeft: '500px', marginTop: '20px', fontSize:'1.8em', fontWeight:'bold'}}> User Settings </div>
-            <div style={{alignContent: 'left', marginLeft: '35px', marginTop: '15px', fontSize:'1.2em'}}> Modify your user settings here:
+            <div style={{alignContent: 'center', marginLeft: '500px', marginTop: '20px', fontSize:'1.8em', fontWeight:'bold', paddingTop: '30px'}}> User Settings </div>
+            <div style={{alignContent: 'left', marginLeft: '35px', marginTop: '30px', fontSize:'1.2em'}}> Modify your user settings here:
                 <br></br>
                 <div style={{alignContent: 'center', marginLeft:'380px', marginRight:'20px', paddingLeft:'20px'}}>
                     Receive Weekly Reports &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;

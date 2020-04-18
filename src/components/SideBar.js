@@ -20,7 +20,7 @@ import Logout from "../pages/Logout";
 var StyledSideNav = styled.div`
   position: absolute;   
   margin-top: 58px;  
-  height: 1400px;
+  height: 1130px;
   width: 150px;     
   z-index: 1;      
   top: 0px;      
