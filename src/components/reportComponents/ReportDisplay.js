@@ -2,17 +2,6 @@ import React from "react";
 import {Button, Table} from "react-bootstrap";
 import DownloadReport from "./DownloadReport";
 
-const newblock = {
-    backgroundColor: "red",
-    borderRadius: "50px",
-    display: "block",
-    width: "600px",
-    height: "400px",
-    marginLeft: "500px",
-    marginTop: "50px",
-    alignContent: "center"
-}
-
 export default class ReportDisplay extends React.Component {
     constructor(props) {
         super(props);
@@ -32,7 +21,7 @@ export default class ReportDisplay extends React.Component {
 
     render() {
         return(
-            <div style={{marginTop: '20px', marginLeft: '100px', width: '1100px', height: '400px'}}>
+            <div style={{marginLeft: '300px', marginTop:'30px'}}>
             <Table striped bordered hover variant={true} size="sm">
                 <thead>
                     <tr>

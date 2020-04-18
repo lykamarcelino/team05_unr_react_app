@@ -74,8 +74,11 @@ export default class GraphDisplay extends React.Component {
     }
 
     render() {
+
+        var chartData;
+
         if(this.state.graphType === "Scatter") {
-            var chartData = {
+             chartData = {
                 labels: this.state.labels,
                 datasets: [
                     {
@@ -90,7 +93,7 @@ export default class GraphDisplay extends React.Component {
             }
         }
         else if (this.state.graphType === "Line"){
-            var chartData = {
+             chartData = {
                 labels: this.state.labels,
                 datasets: [
                     {
@@ -104,7 +107,7 @@ export default class GraphDisplay extends React.Component {
             }
         }
         else {
-            var chartData = {
+             chartData = {
                 labels: this.state.labels,
                 datasets: [
                     {

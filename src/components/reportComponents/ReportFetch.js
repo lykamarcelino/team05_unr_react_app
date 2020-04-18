@@ -1,17 +1,6 @@
 import React from "react";
 import ReportDisplay from "./ReportDisplay";
 
-const newblock = {
-    backgroundColor: "yellow",
-    borderRadius: "50px",
-    display: "block",
-    width: "700px",
-    height: "500px",
-    marginLeft: "200px",
-    marginTop: "50px",
-    alignContent: "center"
-}
-
 export default class ReportFetch extends React.Component {
     constructor(props) {
         super(props);

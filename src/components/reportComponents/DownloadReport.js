@@ -32,7 +32,7 @@ export default class DownLoadReport extends React.Component {
         console.log(this.state)
         return(
             <div>
-                report downloaded
+                <b>Report Downloaded</b>
             </div>
         )
     }

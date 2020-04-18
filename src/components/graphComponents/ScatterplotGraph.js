@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {Line} from 'react-chartjs-2';
-import {Button} from "react-bootstrap";
 
 export default class ScatterplotGraph extends Component{
     constructor(props){

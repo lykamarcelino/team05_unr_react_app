@@ -47,9 +47,9 @@ export default class User extends React.Component {
                     <div style={{textAlign: 'center', alignContent:'center', paddingTop: '130px'}}>
                         <i className="fa fa-user-circle-o fa-5x" style={{alignContent:'center', marginTop:'20px', marginBottom: '20px'}}></i>
                         <br></br>
-                        User: {itemArray[1]} <br></br>
-                        Email: {itemArray[4]} <br></br>
-                        Date Joined: {itemArray[5]}
+                        <b> User: </b> {itemArray[1]} <br></br>
+                        <b> Email: </b> {itemArray[4]} <br></br>
+                        <b> Date Joined: </b> {itemArray[5]}
                     </div>
                 </div>
             </>

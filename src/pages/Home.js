@@ -51,7 +51,7 @@ export const Home = (props) => (
                         <br></br>
                         <i className="fa fa-clock-o fa-lg" style={{marginLeft: '15px', marginRight: '12px'}}></i>Current inventory of <b style={{color:'#585858'}}>Item #06879</b>  will last until next week.
                         <br></br>
-                        <i className="fa fa-lightbulb-o fa-lg" style={{marginLeft: '15px', marginRight: '12px', color:'yellow'}}></i> Sales for <b style={{color:'#585858'}}> Item #08096 </b> are projected to sell at a higher rate than expected!
+                        <i className="fa fa-lightbulb-o fa-lg" style={{marginLeft: '15px', marginRight: '12px', color:'#add8e6'}}></i> Sales for <b style={{color:'#585858'}}> Item #08096 </b> are projected to sell at a higher rate than expected!
                     </div>
                 </Col>
             </Row>

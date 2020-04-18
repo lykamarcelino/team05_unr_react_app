@@ -20,9 +20,9 @@ const dataRoute = [
 
 export const NewReport = (props) => (
     <>
-        <div style={{marginLeft: '210px',marginTop: '0px',fontSize: '2rem', fontWeight: 'bold'}}>Generate</div>
+        <div style={{marginLeft: '170px',marginTop: '0px',fontSize: '2rem', fontWeight: 'bold'}}>Generate</div>
         <Router>
-            <div style={{marginLeft: '170px', marginTop:'10px'}}>
+            <div style={{marginLeft: '135px', marginTop:'10px'}}>
                 <ul style={{listStyleType: 'none', display:'inline'}}>
                     <Link to="/graphForm" style={{marginRight: '10px'}}>
                         <Button variant="outline-secondary">General Sales</Button>{' '}
