@@ -44,7 +44,7 @@ export default class User extends React.Component {
         return (
             <>
                 <div style={newblock}>
-                    <div style={{textAlign: 'center', alignContent:'center', paddingTop: '130px'}}>
+                    <div style={{textAlign: 'center', alignContent:'center', paddingTop: '130px', fontSize: '1.2em'}}>
                         <i className="fa fa-user-circle-o fa-5x" style={{alignContent:'center', marginTop:'20px', marginBottom: '20px'}}></i>
                         <br></br>
                         <b> User: </b> {itemArray[1]} <br></br>

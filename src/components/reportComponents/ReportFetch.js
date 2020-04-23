@@ -30,7 +30,7 @@ export default class ReportFetch extends React.Component {
         return(
                 <>
                     <div style={{marginLeft: '170px',marginTop: '0px',fontSize: '2rem', fontWeight: 'bold'}}>View your Reports</div>
-                        <div style={{marginTop: '20px', marginLeft: '100px', width: '1100px', height: '400px'}}>
+                        <div style={{marginTop: '20px', marginLeft: '120px', width: '1100px', height: '400px'}}>
                             {this.state.fetchdata && <ReportDisplay reportList= {this.state.reports}/>}
                         </div>
                 </>

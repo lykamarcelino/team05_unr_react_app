@@ -1,9 +1,3 @@
-/*
-    Displays the login page for the application
-    Uses the Connect to QuickBooks button for easy connection
-    @Notes: Lyka Marcelino, 04/09/2020
- */
-
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Logo from '../../src/static/Cloud_Logo.png';
@@ -31,7 +25,8 @@ const roundedblock = {
     marginRight: 'auto',
     textAlign: 'center',
     alignContent: 'center',
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    opacity: '0.8'
 }
 
 export default class Login extends React.Component{

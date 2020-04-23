@@ -89,6 +89,17 @@ The project notes will be updated as changes are made to the project.
                  - Changes to reports, generate, and help tabs
                Work in Progress: 
                   - Various cosmetic changes to pages 
+                  
+   **Date:** 04/23/2020
+                    
+               Note:
+                 - Changes to notification
+                 - Allow notifications to be pulled from the backend
+                 - Various cosmetic changes to pages 
+               Work in Progress: 
+                  - Any final changes
+                  
+        
 
 
    
