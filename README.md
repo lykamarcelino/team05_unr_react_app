@@ -99,6 +99,14 @@ The project notes will be updated as changes are made to the project.
                Work in Progress: 
                   - Any final changes
                   
+   **Date:** 04/28/2020
+                      
+                 Note:
+                   - Changes to user dashboard
+                   - Most recent graph generated will be displayed 
+                 Work in Progress: 
+                    - Any final changes
+                  
         
 
 

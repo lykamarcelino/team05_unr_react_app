@@ -29,7 +29,7 @@ export default class ReportDisplay extends React.Component {
                         <th style={{textAlign:'center'}}> Report Name </th>
                         <th style={{textAlign:'center'}}> Report Date </th>
                         <th style={{textAlign:'center'}}> Report Graph Type </th>
-                        <th style={{textAlign:'center'}}> Download Report </th>
+                        <th style={{textAlign:'center'}}> Open Report </th>
                     </tr>
                 </thead>
 

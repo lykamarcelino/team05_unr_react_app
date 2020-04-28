@@ -7,7 +7,7 @@ const newblock = {
     display: "block",
     width: "1200px",
     height: "600px",
-    marginLeft: "250px",
+    marginLeft: "257px",
     marginTop: "40px",
 }
 

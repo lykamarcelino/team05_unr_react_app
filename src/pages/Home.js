@@ -6,10 +6,10 @@
  */
 
 import React from 'react';
-import {Row} from "react-bootstrap";
-import StaticGraph from "../components/graphDisplays/StaticGraph";
-import StaticGraph2 from "../components/graphDisplays/StaticGraph2";
+import {Row, Col} from "react-bootstrap";
 import Notifications from "../components/Notifications";
+import FetchStaticGraph from "../components/graphDisplays/FetchStaticGraph";
+import FetchStaticGraph2 from "../components/graphDisplays/FetchStaticGraph2";
 
 const roundblock = {
     backgroundColor: "whitesmoke",
@@ -26,13 +26,28 @@ export const Home = (props) => (
         <div>
             <Row className="justify-content-md-center">
                 <div style = {roundblock}>
-                    <div style={{alignContent: 'left', marginLeft: '25px', marginTop: '20px', fontSize:'1.8em', fontWeight:'bold'}}> User Dashboard</div>
-                    <StaticGraph/>
-                    <StaticGraph2/>
+                    <Row>
+                        <div style={{alignContent: 'left', marginLeft: '40px', marginTop: '20px', fontSize:'1.8em', fontWeight:'bold'}}> User Dashboard</div>
+                    </Row>
+                    <div style = {{marginLeft: '25px', marginRight: '25px', marginTop: '20px', height: "320px"}}>
+                        <Row md = "auto">
+                            <Col>
+                                <div style = {{height: '320px'}}>
+                                    <FetchStaticGraph/>
+                                </div>
+                            </Col>
+
+                            <Col>
+                                <div style = {{height: '320px'}}>
+                                    <FetchStaticGraph2/>
+                                </div>
+                            </Col>
+
+                        </Row>
+                    </div>
                 </div>
             </Row>
           <Notifications/>
         </div>
-
     </>
 )
