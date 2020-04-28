@@ -28,7 +28,7 @@ export const QBData = (props) => (
             <>
             <div style={{marginLeft: '170px',marginTop: '0px',fontSize: '2rem', fontWeight: 'bold'}}>View your QuickBooks Data</div>
             <Router>
-            <div style={{marginLeft: '170px', marginTop:'10px'}}>
+            <div style={{marginLeft: '135px', marginTop:'10px'}}>
                     <ul style={{listStyleType: 'none', display:'inline'}}>
                         <Link to="/sales" style={{paddingRight: '10px'}}>
                             <Button variant="outline-secondary">Sales</Button>{' '}

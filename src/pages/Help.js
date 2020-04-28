@@ -14,7 +14,7 @@ const newblock = {
     width: "1200px",
     height: "660px",
     marginLeft: "257px",
-    marginTop: "17px",
+    marginTop: "22px",
 }
 
 export const Help = () => (
