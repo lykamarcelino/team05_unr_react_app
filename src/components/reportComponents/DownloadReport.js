@@ -32,7 +32,7 @@ export default class DownLoadReport extends React.Component {
         console.log(this.state)
         return(
             <div>
-                <b>Report Downloaded</b>
+                <b>Report Open [work in progress]</b>
             </div>
         )
     }

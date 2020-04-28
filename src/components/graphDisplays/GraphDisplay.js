@@ -35,7 +35,6 @@ export default class GraphDisplay extends React.Component {
             dataFetched: false,
             varSet: false,
 
-
         }
     }
 
