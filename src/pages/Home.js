@@ -2,7 +2,7 @@
     Displays the home page, is called within the topnav in SideBar
     Is loaded upon connection
     Used to display notifications and the graph predictions
-    @Notes: Lyka Marcelino, 04/04/2020
+    @Notes: Lyka Marcelino and Liliana Pacheco, 04/04/2020
  */
 
 import React from 'react';

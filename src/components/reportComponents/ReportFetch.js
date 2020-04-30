@@ -1,3 +1,10 @@
+/*
+*   Name: ReportFetch.js
+*   Description: This file creates a fetch request for the backend and retrieves a list of all the user created
+*   reports. It then passes the Data to ReportDisplay.
+*   Date: 04/29/2020
+*   Author: Chantelle Marquez Suarez
+* */
 import React from "react";
 import ReportDisplay from "./ReportDisplay";
 

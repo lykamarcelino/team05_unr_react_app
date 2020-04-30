@@ -1,3 +1,11 @@
+/*
+*   Name: CreateReport.js
+*   Description: This component is displays a button and once clicked will receive any form data from the user
+*   as well as prediction data from the backend. This is then transferred to SubmitReportToBack to create
+*   an appropriate Report
+*   Date: 04/29/2020
+*   Author: Chantelle Marquez Suarez
+* */
 import React from "react";
 import {Button} from "react-bootstrap";
 import SubmitReportToBack from "./SubmitReportToBack";

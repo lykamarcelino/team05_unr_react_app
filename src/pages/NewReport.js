@@ -1,3 +1,10 @@
+/*
+*   Name: NewReport.js
+*   Description: This File Displays the three main model tabs {General Sales, Item Quantity sales, Customer Purchases}
+*   and redirects to the correct form interface.
+*   Date: 04/29/2020
+*   Author: Liliana pacheco
+* */
 import React from 'react';
 import {Button} from 'react-bootstrap';
 import GeneralForm from "../components/graphForms/GeneralForm";

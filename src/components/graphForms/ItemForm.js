@@ -1,3 +1,11 @@
+/*
+*   Name: ItemForm.js
+*   Description: This file displays the appropriate entry boxes, buttons and labels for the Item Quantity Sales
+*   prediction tab in the generate tab. It takes care of saving the user entries and upon submission
+*   passes the data to GraphDisplay to show the appropriate predictions and graph.
+*   Date: 04/29/2020
+*   Author: Liliana Pacheco
+* */
 import React from 'react';
 import {Form, Button} from "react-bootstrap";
 import GraphDisplay from "../graphDisplays/GraphDisplay";

@@ -1,3 +1,10 @@
+/*
+*   Name: FetchStaticGraph.js
+*   Description: This file will form a fetch request for the latest graph created by a
+*   Sales Forecasting user then transfer the data to staticGraph for Display.
+*   Date: 04/29/2020
+*   Author: Liliana Pacheco
+* */
 import React from "react";
 import StaticGraph from "./StaticGraph";
 
