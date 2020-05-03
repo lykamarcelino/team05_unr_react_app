@@ -28,7 +28,7 @@ export default class ReportDisplay extends React.Component {
 
     render() {
         return(
-            <div style={{marginLeft: '310px', marginTop:'30px'}}>
+            <div style={{marginLeft: '325px', marginTop:'30px'}}>
             <Table striped bordered hover variant={true} size="sm">
                 <thead>
                     <tr>

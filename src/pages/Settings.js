@@ -15,7 +15,7 @@ const newblock = {
     display: "block",
     width: "1200px",
     height: "600px",
-    marginLeft: "250px",
+    marginLeft: "257px",
     marginTop: "40px",
 }
 
@@ -57,14 +57,15 @@ export const Settings = (props) => (
             <div style={{alignContent: 'left', marginLeft: '35px', marginTop: '30px', fontSize:'1.2em'}}> Modify your user settings here:
                 <br></br>
                 <div style={{alignContent: 'center', marginLeft:'380px', marginRight:'20px', paddingLeft:'20px'}}>
-                    Receive Weekly Reports &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    <ToggleButtonGroupControlled />
-                    <br></br> <br></br>
-                    Send Report to Email &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    Update Notifications Weekly &nbsp; &nbsp;
                     <ToggleButtonGroupControlled />
                     <br></br> <br></br>
                     Keep Reports Until Deleted &nbsp; &nbsp; &nbsp;
                     <ToggleButtonGroupControlled />
+                    <br></br> <br></br>
+                    Send Report to Email &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <ToggleButtonGroupControlled />
+
                 </div>
                 <div style={{marginTop: '70px', marginLeft:'500px'}}><PopUp/><div>
             </div>

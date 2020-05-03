@@ -83,7 +83,7 @@ export default class Sales extends React.Component {
 
         return (
             <>
-                <div style={{marginTop: '20px', marginLeft: '100px', width: '1100px', height: '400px'}}>
+                <div style={{marginTop: '20px', marginLeft: '155px', width: '1100px', height: '400px'}}>
                     <Table striped bordered hover variant={true} size="sm">
                         <thead>
                         <tr>
