@@ -1,8 +1,10 @@
 /*
-    Used to retrieve information from the QuickBooks API and the backend
-    Retrieves tables from Sales, Invoices, and Estimates components
-    @Notes: Lyka Marcelino, 04/09/2020
- */
+*   Name: QBData.js
+*   Used to retrieve information from the QuickBooks API and the backend
+*    Retrieves tables from Sales, Invoices, and Estimates components
+*   Date: 05/02/2020
+*   Author: Lyka Marcelino
+* */
 
 import React from 'react';
 import Sales from "../components/Sales";

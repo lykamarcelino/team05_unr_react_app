@@ -1,7 +1,9 @@
 /*
-    Is used to display user information from the backend and QuickBooks API
-    @Notes: Lyka Marcelino, 04/09/2020
- */
+*   Name: User.js
+*   Is used to display user information from the backend and QuickBooks API
+*   Date: 05/02/2020
+*   Author: Lyka Marcelino
+* */
 
 import React from 'react';
 

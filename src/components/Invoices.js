@@ -1,8 +1,10 @@
 /*
-    Component to retrieve the Invoices from the QuickBooks API
-    Prints the amount of Invoices in my sandbox
-    @Notes: Lyka Marcelino, 04/04/2020
- */
+*   Name: Invoices.js
+*   Description: This component is used to retrieve the data from the backend regarding invoices
+*   The data is then displayed as a table in the QBData tab
+*   Date: 05/02/2020
+*   Author: Lyka Marcelino
+* */
 
 import React from 'react';
 import {Table} from "react-bootstrap";

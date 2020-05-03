@@ -1,3 +1,11 @@
+/*
+*   Name: Login.js
+*   Login Page for the application
+*   Connect to QuickBooks Button
+*   Date: 05/02/2020
+*   Author: Lyka Marcelino
+* */
+
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Logo from '../../src/static/Cloud_Logo.png';

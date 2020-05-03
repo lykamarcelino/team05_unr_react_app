@@ -1,9 +1,11 @@
 /*
-    Displays the home page, is called within the topnav in SideBar
-    Is loaded upon connection
-    Used to display notifications and the graph predictions
-    @Notes: Lyka Marcelino and Liliana Pacheco, 04/04/2020
- */
+*   Name: Home.js
+*   Displays the home page, is called within the topnav in SideBar
+*   Is loaded upon connection
+*   Used to display notifications and the graph predictions
+*   Date: 05/02/2020
+*   Author: Lyka Marcelino and Liliana Pacheco
+* */
 
 import React from 'react';
 import {Row, Col} from "react-bootstrap";
