@@ -1,8 +1,10 @@
 /*
-    Displays the help page for the application, is called within the topnav in SideBar
-    Instructions for generating a report
-    @Notes: Lyka Marcelino, 04/04/2020
- */
+*   Name: Help.js
+*   Displays the help page for the application, is called within the topnav in SideBar
+*   Instructions for generating a report
+*   Date: 05/02/2020
+*   Author: Lyka Marcelino
+* */
 
 import React from 'react';
 import Instructions from "../static/Generate_Instructions.png";

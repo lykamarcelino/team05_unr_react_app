@@ -1,3 +1,10 @@
+/*
+*   Name: ItemFetchForm.js
+*   Description: This file makes a fetch request to the backend and retrieves a list of the
+*   active inventory Items of the User. It then passes this list to the customer form for selection.
+*   Date: 04/29/2020
+*   Author: Liliana Pacheco
+* */
 import React from "react";
 import ItemForm from "./ItemForm";
 

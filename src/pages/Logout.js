@@ -1,8 +1,10 @@
 /*
-    Is used to logout and redirect to the login page
-    Hits the logout endpoint in the backend to revoke the client
-    @Notes: Lyka Marcelino, 04/09/2020
- */
+*   Name: Logout.js
+*   Is used to logout and redirect to the login page
+*    Hits the logout endpoint in the backend to revoke the client
+*   Date: 05/02/2020
+*   Author: Lyka Marcelino
+* */
 
 import React from 'react';
 

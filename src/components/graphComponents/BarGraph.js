@@ -1,3 +1,10 @@
+/*
+*   Name: BarGraph.js
+*   Description: This file can take in chart Data and display it in the form of a
+*   bar graph using Chart.js
+*   Date: 04/29/2020
+*   Author: Liliana Pacheco
+* */
 import React, {Component} from 'react';
 import {Bar} from 'react-chartjs-2';
 

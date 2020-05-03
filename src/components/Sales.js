@@ -1,8 +1,10 @@
 /*
-    Component to retrieve the Sales from the QuickBooks API
-    Prints the most recent 25 sales from the sandbox
-    @Notes: Lyka Marcelino, 04/04/2020
- */
+*   Name: Sales.js
+*   Description: This component is used to display the inventory information
+*   Is used for the inventory tab on the QBData page, is displayed as a table
+*   Date: 05/02/2020
+*   Author: Lyka Marcelino
+* */
 
 import React from 'react';
 import {Table} from "react-bootstrap";

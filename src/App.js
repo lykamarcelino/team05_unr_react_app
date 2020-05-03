@@ -1,8 +1,10 @@
 /*
-    Main loading page for the React application
-    Used to route to the Connected and Login pages
-    @Notes: Lyka Marcelino, 04/09/2020
- */
+*   Name: App.js
+*   Main app page
+*   Routes to the login and connected pages listed in Routes
+*   Date: 05/02/2020
+*   Author: Lyka Marcelino
+* */
 
 import React from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';

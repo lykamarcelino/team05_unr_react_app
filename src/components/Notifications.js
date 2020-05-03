@@ -1,3 +1,10 @@
+/*
+*   Name: Notifications.js
+*   Description: This component is used to display the notifications on the user dashboard
+*   Date: 05/02/2020
+*   Author: Lyka Marcelino
+* */
+
 import React from 'react';
 import {Col, Row} from "react-bootstrap";
 

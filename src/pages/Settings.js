@@ -1,3 +1,11 @@
+/*
+*   Name: Settings.js
+*   Used to modify user settings
+*   Display for the settings tab of the application
+*   Date: 05/02/2020
+*   Author: Lyka Marcelino
+* */
+
 import React, {useState, useRef} from 'react';
 import {ToggleButton, ToggleButtonGroup, Button, Overlay, Tooltip} from "react-bootstrap";
 

@@ -1,7 +1,9 @@
 /*
-    Used to keep the routes for the Connected and Login pages
-    @Notes: Lyka Marcelino, 04/09/2020
- */
+*   Name: Routes.js
+*   Used to keep the routes for the Connected and Login pages
+*   Date: 05/02/2020
+*   Author: Lyka Marcelino
+* */
 
 import React from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom'

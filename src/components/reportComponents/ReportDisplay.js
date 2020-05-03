@@ -1,3 +1,10 @@
+/*
+*   Name: ReportDisplay.js
+*   Description: This file receives a list of the user created reports. It then takes care of creating
+*   a table in the Reports Tab and displays the report data accordingly.
+*   Date: 04/29/2020
+*   Author: Chantelle Marquez Suarez
+* */
 import React from "react";
 import {Button, Table} from "react-bootstrap";
 import DownloadReport from "./DownloadReport";

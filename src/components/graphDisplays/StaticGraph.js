@@ -1,3 +1,10 @@
+/*
+*   Name: StaticGraph.js
+*   Description: This File will take in Graph Data and display the correct graph depending on input. This
+*   component is meant for static graphs. (Used in the main dashboard)
+*   Date: 04/29/2020
+*   Author: Liliana Pacheco
+* */
 import React from "react";
 import LineGraph from "../graphComponents/LineGraph";
 import BarGraph from "../graphComponents/BarGraph";

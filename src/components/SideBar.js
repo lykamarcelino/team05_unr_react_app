@@ -1,7 +1,10 @@
 /*
-    SideBar component for the application, routes to the different pages
-    @Notes: Lyka Marcelino, 04/04/2020
- */
+*   Name: SideBar.js
+*   Description: This component is used to route to the different pages within the app
+*   Is used to display the sidebar
+*   Date: 05/02/2020
+*   Author: Lyka Marcelino
+* */
 
 import React from 'react'
 import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom'

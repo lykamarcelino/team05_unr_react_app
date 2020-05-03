@@ -1,3 +1,10 @@
+/*
+*   Name: GraphDisplay.js
+*   Description: This file will take in form data from the following files: {GeneralForm, CustomerForm, ItemForm}
+*   it will then fetch a data predictions based on the form input and  display a correlating graph.
+*   Date: 04/29/2020
+*   Author: Liliana Pacheco
+* */
 import React from "react";
 import BarGraph from "../graphComponents/BarGraph";
 import LineGraph from "../graphComponents/LineGraph";

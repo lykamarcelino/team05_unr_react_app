@@ -1,3 +1,10 @@
+/*
+*   Name: DownloadReport.js
+*   Description: This file makes a fetch request to the backend and retrieves a previously created report.
+*   The report is then downloaded and open for display (this section is currently a work in progress)
+*   Date: 04/29/2020
+*   Author: Chantelle Marquez Suarez
+* */
 import React from "react";
 
 export default class DownLoadReport extends React.Component {
